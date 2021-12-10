@@ -30,3 +30,12 @@ Driver berisi class-class implementasi dari JDBC
         - digunakan untuk perintah sql yang mengembalikan data.
         - return ResultSet
 
+### ResultSet
+    - adalah representasi data hasil query dari database
+    - Cara kerjanya seperti cursor, untuk maju menggunakan next() dan untuk mundur gunakan previous()
+         
+         while (resultSet.next()){
+                Integer id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+            }

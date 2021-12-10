@@ -16,3 +16,17 @@ Driver berisi class-class implementasi dari JDBC
 - Connection Pool di JDBC direpresentasikan javax.sql.DataSource
 - Library yang paling bagus yaitu HikariCP
 
+
+### Statement
+ - java.sql.Statement
+ - Untuk mengirim sql ke database
+ - untuk membuat statement bisa menggunakan method createStatement() pada connection.
+
+    #### statement.executeUpdate(sql)
+        - digunakan untuk mengirim perintah sql INSERT, UPDATE DELETE yang tidak membutuhkan balikan.
+        - return int, yaitu jumlah data yang terkena impact dari sql yang dieksekusi
+
+    #### statement.executeQuery(sql)
+        - digunakan untuk perintah sql yang mengembalikan data.
+        - return ResultSet
+

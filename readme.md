@@ -39,3 +39,9 @@ Driver berisi class-class implementasi dari JDBC
                 String name = resultSet.getString("name");
                 String email = resultSet.getString("email");
             }
+
+
+### PreparedStatement
+   - Turunan dari interfce Statement
+   - PreparedStatement memiliki kemampuan mengamankan input dari user sehingga aman dari sql injection
+

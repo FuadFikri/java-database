@@ -45,3 +45,10 @@ Driver berisi class-class implementasi dari JDBC
    - Turunan dari interfce Statement
    - PreparedStatement memiliki kemampuan mengamankan input dari user sehingga aman dari sql injection
 
+
+### Database Transaction
+   -  Secara default, Connection yang dibuat dengan JDBC memiliki sifat auto commit.
+   - Untuk melakukan database transaction, kita membutuhkan commit setelah semua proses selesai, maka kita perlu mematikan auto commit di JDBC.
+
+         
+
